@@ -582,12 +582,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1gF-Zz-W1j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="958" y="821"/>
+            <point key="canvasLocation" x="958" y="900"/>
         </scene>
-        <!--View Controller-->
+        <!--Login CustomerVC-->
         <scene sceneID="308-qO-WXr">
             <objects>
-                <viewController id="beU-Ip-Yiq" sceneMemberID="viewController">
+                <viewController restorationIdentifier="LoginCustomerVC" storyboardIdentifier="LoginCustomerVC" id="beU-Ip-Yiq" customClass="LoginCustomerVC" customModule="Bundle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="22G-PC-fgF"/>
                         <viewControllerLayoutGuide type="bottom" id="JBl-ps-yGu"/>
@@ -677,6 +677,10 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="emailTextFieldDidBegin:" destination="beU-Ip-Yiq" eventType="editingDidBegin" id="EYG-JV-P6A"/>
+                                                    <action selector="emailTextFieldDidEnd:" destination="beU-Ip-Yiq" eventType="editingDidEnd" id="ptL-sU-dqf"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpZ-7Q-qJX">
                                                 <rect key="frame" x="37.5" y="470" width="300" height="1"/>
@@ -693,6 +697,10 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="firstNameDidBegin:" destination="beU-Ip-Yiq" eventType="editingDidBegin" id="6L1-rF-CVB"/>
+                                                    <action selector="firstNameDidEnd:" destination="beU-Ip-Yiq" eventType="editingDidEnd" id="jju-GQ-8LH"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsa-OW-d1l">
                                                 <rect key="frame" x="37.5" y="544" width="300" height="1"/>
@@ -709,6 +717,10 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="lastNameDidBegin:" destination="beU-Ip-Yiq" eventType="editingDidBegin" id="045-a1-Op9"/>
+                                                    <action selector="lastNameDidEnd:" destination="beU-Ip-Yiq" eventType="editingDidEnd" id="cEj-Xc-4VG"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifw-u2-9ru">
                                                 <rect key="frame" x="37.5" y="617" width="300" height="1"/>
@@ -725,6 +737,10 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="userNameDidBegin:" destination="beU-Ip-Yiq" eventType="editingDidBegin" id="CXw-cM-BVM"/>
+                                                    <action selector="userNameDidEnd:" destination="beU-Ip-Yiq" eventType="editingDidEnd" id="5e2-5c-69P"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCN-8j-4Qk">
                                                 <rect key="frame" x="37.5" y="690" width="300" height="1"/>
@@ -741,6 +757,10 @@
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="passwordDidBegin:" destination="beU-Ip-Yiq" eventType="editingDidBegin" id="lur-a7-bHs"/>
+                                                    <action selector="passwordDidEnd:" destination="beU-Ip-Yiq" eventType="editingDidEnd" id="yRq-ab-wvm"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJ8-7s-A3u">
                                                 <rect key="frame" x="37.5" y="763" width="300" height="1"/>
@@ -766,6 +786,9 @@
                                                         <integer key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="registrEmailButtonAction:" destination="beU-Ip-Yiq" eventType="touchUpInside" id="xWe-FP-5zu"/>
+                                                </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enX-OE-iwK">
                                                 <rect key="frame" x="28" y="879" width="319" height="30"/>
@@ -941,6 +964,16 @@
                         <viewLayoutGuide key="safeArea" id="QFs-8Z-ICc"/>
                     </view>
                     <size key="freeformSize" width="375" height="1100"/>
+                    <connections>
+                        <outlet property="emailTextFieldOutlet" destination="dFO-hE-wyn" id="0rr-ju-GVZ"/>
+                        <outlet property="faceBookButtonLoginOutlet" destination="3n3-FJ-taO" id="k5s-Pg-i9s"/>
+                        <outlet property="firstNameTextFieldOutlet" destination="aaq-Ne-Lmg" id="MvE-6k-Op3"/>
+                        <outlet property="lastNameTextFieldOutlet" destination="HWV-Kl-F6v" id="pU9-Qu-NWK"/>
+                        <outlet property="passwordTextFieldOutlet" destination="es0-Q0-DfQ" id="vJY-Lv-Znr"/>
+                        <outlet property="registrEmailButtonOutlet" destination="1X3-1P-aX0" id="1cW-B4-idn"/>
+                        <outlet property="scrollView" destination="9oq-Vc-c9a" id="yCM-gZ-6Ga"/>
+                        <outlet property="userNameTextFildOutlet" destination="ARo-Op-2DJ" id="Vam-N1-RaP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j1j-sE-nqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1010,7 +1043,8 @@
         <image name="bckb" width="13" height="21"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9xY-9r-jKi"/>
+        <segue reference="Unr-nV-B04"/>
+        <segue reference="25h-fn-KyH"/>
         <segue reference="svf-6S-saw"/>
     </inferredMetricsTieBreakers>
 </document>
