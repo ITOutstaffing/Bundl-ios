@@ -7,13 +7,13 @@ target 'Bundle' do
 
   # Pods for Bundle
 
-#pod 'Firebase/Analytics'
-#pod 'Firebase/Database'
-#pod 'Firebase/Auth'
-#pod 'Firebase/Storage'
-#pod 'FBSDKCoreKit'
-#pod 'FBSDKLoginKit'
-#pod 'FBSDKShareKit'
+pod 'Firebase/Analytics'
+pod 'Firebase/Database'
+pod 'Firebase/Auth'
+pod 'Firebase/Storage'
+pod 'FBSDKCoreKit'
+pod 'FBSDKLoginKit'
+pod 'FBSDKShareKit'
 
   target 'BundleTests' do
     inherit! :search_paths
