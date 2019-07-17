@@ -1,13 +1,26 @@
 PODS:
-  - FBSDKCoreKit (5.2.2):
-    - FBSDKCoreKit/Basics (= 5.2.2)
-    - FBSDKCoreKit/Core (= 5.2.2)
-  - FBSDKCoreKit/Basics (5.2.2)
-  - FBSDKCoreKit/Core (5.2.2):
+  - AWSAuthCore (2.7.4):
+    - AWSCore (= 2.7.4)
+  - AWSCognitoIdentityProvider (2.7.4):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+    - AWSCore (= 2.7.4)
+  - AWSCognitoIdentityProviderASF (1.0.1)
+  - AWSCore (2.7.4)
+  - AWSMobileClient (2.7.4):
+    - AWSAuthCore (= 2.7.4)
+    - AWSCognitoIdentityProvider (= 2.7.4)
+  - AWSUserPoolsSignIn (2.7.4):
+    - AWSAuthCore (= 2.7.4)
+    - AWSCognitoIdentityProvider (= 2.7.4)
+  - FBSDKCoreKit (5.2.3):
+    - FBSDKCoreKit/Basics (= 5.2.3)
+    - FBSDKCoreKit/Core (= 5.2.3)
+  - FBSDKCoreKit/Basics (5.2.3)
+  - FBSDKCoreKit/Core (5.2.3):
     - FBSDKCoreKit/Basics
-  - FBSDKLoginKit (5.2.2):
+  - FBSDKLoginKit (5.2.3):
     - FBSDKCoreKit (~> 5.0)
-  - FBSDKShareKit (5.2.2):
+  - FBSDKShareKit (5.2.3):
     - FBSDKCoreKit (~> 5.0)
   - Firebase/Analytics (6.4.0):
     - Firebase/Core
@@ -89,6 +102,9 @@ PODS:
   - nanopb/encode (0.3.901)
 
 DEPENDENCIES:
+  - AWSCore
+  - AWSMobileClient (~> 2.7.0)
+  - AWSUserPoolsSignIn (~> 2.7.0)
   - FBSDKCoreKit
   - FBSDKLoginKit
   - FBSDKShareKit
@@ -99,6 +115,12 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AWSAuthCore
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSMobileClient
+    - AWSUserPoolsSignIn
     - FBSDKCoreKit
     - FBSDKLoginKit
     - FBSDKShareKit
@@ -117,9 +139,15 @@ SPEC REPOS:
     - nanopb
 
 SPEC CHECKSUMS:
-  FBSDKCoreKit: e56801ebceaee1eaa4019e53bfaa04dc6ad2a60d
-  FBSDKLoginKit: 32af638b7e00b6bb2b22698bbeb72113bdacfd3a
-  FBSDKShareKit: efb5621d1e03dcbf6f889719c106fabe8e8a50c0
+  AWSAuthCore: 877098cabef6e12c6c1876026f58ac5bc3b11cf6
+  AWSCognitoIdentityProvider: f9197020de4136ff321a7b74d8123bb1f2535ed2
+  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
+  AWSCore: 9ff5ac15c4a5dd8419753fe19b9e98f7ba1b7859
+  AWSMobileClient: 142858acff0ed9903254d0ff8ea916353ac69972
+  AWSUserPoolsSignIn: fca12f8288cd1b54c23f209037fdf9faa367915f
+  FBSDKCoreKit: 5154c35d9058fd7dfa0445ba19e194c4b172fc32
+  FBSDKLoginKit: dc98b6bf12334f1a42f28d0457fffc9aa3d1eca5
+  FBSDKShareKit: 6f9c622f9a5d051f43f2dab6f753d5198422b89c
   Firebase: 9445469655a98e9010737f4bc4720e5bda465873
   FirebaseAnalytics: 69fe25866d2ec87c6f02d72c3c9a82bce9c065a0
   FirebaseAuth: 68cfa47997f53d29ce978e7a615fb78d7925fcbe
@@ -134,6 +162,6 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 37684a95bde8b2406cc9857b35a3bcd8fc85392d
+PODFILE CHECKSUM: 98069509dc38174c6d2b88d34470ea2c1df25234
 
 COCOAPODS: 1.7.4

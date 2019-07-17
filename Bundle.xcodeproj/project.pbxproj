@@ -18,6 +18,8 @@
 		2F2F097A22D4C9D200295F93 /* LoginSellerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2F097922D4C9D200295F93 /* LoginSellerVC.swift */; };
 		2F3C8DCF22DCC71600847C99 /* fireBaseAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C8DCE22DCC71600847C99 /* fireBaseAuth.swift */; };
 		2F3C8DD122DCD13100847C99 /* extansion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3C8DD022DCD13100847C99 /* extansion.swift */; };
+		2F8B859322DE02B600D20AF2 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B859222DE02B600D20AF2 /* FirstVC.swift */; };
+		2F8B859522DE069800D20AF2 /* LoginOldUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B859422DE069800D20AF2 /* LoginOldUserVC.swift */; };
 		2FAB6AFD22DCAF0400F8AF4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FAB6AFC22DCAF0400F8AF4F /* GoogleService-Info.plist */; };
 		2FAB6AFE22DCAF0400F8AF4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FAB6AFC22DCAF0400F8AF4F /* GoogleService-Info.plist */; };
 		BB7F7ACFA98BBD819EC5F88B /* Pods_BundleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1CAFA3BFD62396BBA921F5 /* Pods_BundleUITests.framework */; };
@@ -62,6 +64,9 @@
 		2F2F097922D4C9D200295F93 /* LoginSellerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSellerVC.swift; sourceTree = "<group>"; };
 		2F3C8DCE22DCC71600847C99 /* fireBaseAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fireBaseAuth.swift; sourceTree = "<group>"; };
 		2F3C8DD022DCD13100847C99 /* extansion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extansion.swift; sourceTree = "<group>"; };
+		2F8B859222DE02B600D20AF2 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		2F8B859422DE069800D20AF2 /* LoginOldUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOldUserVC.swift; sourceTree = "<group>"; };
+		2F8B859622DE0C8100D20AF2 /* Bundle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bundle.entitlements; sourceTree = "<group>"; };
 		2FAB6AFC22DCAF0400F8AF4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3CFA9CFA2A973BB6EEF60480 /* Pods-BundleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BundleUITests.release.xcconfig"; path = "Target Support Files/Pods-BundleUITests/Pods-BundleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3E45B8FEF0D7241C763DD875 /* Pods-Bundle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bundle.debug.xcconfig"; path = "Target Support Files/Pods-Bundle/Pods-Bundle.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,11 +153,14 @@
 		2F2F094622D4B19F00295F93 /* Bundle */ = {
 			isa = PBXGroup;
 			children = (
+				2F8B859622DE0C8100D20AF2 /* Bundle.entitlements */,
 				2F2F094722D4B19F00295F93 /* AppDelegate.swift */,
+				2F8B859222DE02B600D20AF2 /* FirstVC.swift */,
 				2F2F097722D4C9B000295F93 /* LoginCustomerVC.swift */,
+				2F2F097922D4C9D200295F93 /* LoginSellerVC.swift */,
+				2F8B859422DE069800D20AF2 /* LoginOldUserVC.swift */,
 				2F3C8DD022DCD13100847C99 /* extansion.swift */,
 				2F3C8DCE22DCC71600847C99 /* fireBaseAuth.swift */,
-				2F2F097922D4C9D200295F93 /* LoginSellerVC.swift */,
 				2F2F094922D4B19F00295F93 /* ViewController.swift */,
 				2F2F094B22D4B19F00295F93 /* Main.storyboard */,
 				2F2F094E22D4B1A100295F93 /* Assets.xcassets */,
@@ -253,6 +261,11 @@
 				TargetAttributes = {
 					2F2F094322D4B19F00295F93 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					2F2F095722D4B1A100295F93 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -407,9 +420,11 @@
 				2F2F094A22D4B19F00295F93 /* ViewController.swift in Sources */,
 				2F2F097822D4C9B000295F93 /* LoginCustomerVC.swift in Sources */,
 				2F2F094822D4B19F00295F93 /* AppDelegate.swift in Sources */,
+				2F8B859322DE02B600D20AF2 /* FirstVC.swift in Sources */,
 				2F3C8DD122DCD13100847C99 /* extansion.swift in Sources */,
 				2F2F097A22D4C9D200295F93 /* LoginSellerVC.swift in Sources */,
 				2F3C8DCF22DCC71600847C99 /* fireBaseAuth.swift in Sources */,
+				2F8B859522DE069800D20AF2 /* LoginOldUserVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,7 +600,9 @@
 			baseConfigurationReference = 3E45B8FEF0D7241C763DD875 /* Pods-Bundle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Bundle/Bundle.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JA8GNJ27N;
 				INFOPLIST_FILE = Bundle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -603,7 +620,9 @@
 			baseConfigurationReference = D327BA52DBB33CF78BD15511 /* Pods-Bundle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Bundle/Bundle.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JA8GNJ27N;
 				INFOPLIST_FILE = Bundle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

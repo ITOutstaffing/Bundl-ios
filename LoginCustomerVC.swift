@@ -10,7 +10,35 @@ import UIKit
 import Firebase
 import FBSDKLoginKit
 
-class LoginCustomerVC: UIViewController {
+class LoginCustomerVC: UIViewController, LoginButtonDelegate {
+//    protocol facebook button
+    func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+        if error != nil {
+            print(error!)
+            return
+        }
+        let accessToken = AccessToken.current
+        guard let accessTokenString = accessToken?.tokenString else {return}
+        let credential = FacebookAuthProvider.credential(withAccessToken: accessTokenString)
+        Auth.auth().signIn(with: credential) { (user, error) in
+            if error != nil {
+                print("error with auth facebook", error!)
+                return
+            }
+            print("successesfully logged with FB", user!)
+        }
+        GraphRequest(graphPath: "/me", parameters: ["fields": "id, name, email"]).start { (connection, result, err) in
+            if err != nil {
+                print("problem with graphrequest", err!)
+                return
+            }
+        }
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
+        print("Log out")
+    }
+    
     @IBOutlet weak var registrEmailButtonOutlet: UIButton!
     @IBOutlet weak var emailTextFieldOutlet: UITextField!
     @IBOutlet weak var firstNameTextFieldOutlet: UITextField!
@@ -34,7 +62,7 @@ class LoginCustomerVC: UIViewController {
         let faceBookLoginButton = FBLoginButton()
         faceBookButtonLoginOutlet.addSubview(faceBookLoginButton)
         faceBookLoginButton.frame = CGRect(x: 0, y: 0, width: faceBookButtonLoginOutlet.frame.width, height: faceBookButtonLoginOutlet.frame.height)
-        faceBookLoginButton.delegate = self as! LoginButtonDelegate
+        faceBookLoginButton.delegate = self
         
     }
     func loginButtonIsActive(){

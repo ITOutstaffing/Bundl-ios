@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="257" y="116"/>
         </scene>
-        <!--View Controller-->
+        <!--FirstVC-->
         <scene sceneID="RR9-Zw-sKu">
             <objects>
-                <viewController id="SOt-Yj-Hq6" sceneMemberID="viewController">
+                <viewController restorationIdentifier="FirstVC" storyboardIdentifier="FirstVC" id="SOt-Yj-Hq6" customClass="FirstVC" customModule="Bundle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7wN-zw-kyz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,11 +90,11 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycB-5l-As7">
                                 <rect key="frame" x="41.5" y="230" width="331" height="50"/>
-                                <color key="backgroundColor" red="0.0119239362" green="0.47466540340000002" blue="0.98470920319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="icA-3P-CDW"/>
                                 </constraints>
-                                <state key="normal" title="Facebook">
+                                <state key="normal">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -267,6 +267,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="s6U-c8-Ddf"/>
                     </view>
+                    <connections>
+                        <outlet property="facebookButton" destination="ycB-5l-As7" id="N8W-j5-gRA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHo-Lc-c7M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -455,10 +458,10 @@
             </objects>
             <point key="canvasLocation" x="958" y="-696"/>
         </scene>
-        <!--View Controller-->
+        <!--Login Old UserVC-->
         <scene sceneID="epc-rm-fT4">
             <objects>
-                <viewController id="sDe-eX-mO9" sceneMemberID="viewController">
+                <viewController restorationIdentifier="LoginOldUserVC" storyboardIdentifier="LoginOldUserVC" id="sDe-eX-mO9" customClass="LoginOldUserVC" customModule="Bundle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ybu-Gz-Sef">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -496,11 +499,11 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STa-ZH-EKR">
                                 <rect key="frame" x="41.5" y="230" width="331" height="50"/>
-                                <color key="backgroundColor" red="0.0119239362" green="0.47466540340000002" blue="0.98470920319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="eWh-8i-6tL"/>
                                 </constraints>
-                                <state key="normal" title="Facebook">
+                                <state key="normal">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -542,7 +545,7 @@
                                     <color key="titleColor" red="0.3294117647" green="0.71372549019999998" blue="0.4941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="SOt-Yj-Hq6" kind="show" id="DrE-Mz-uGG"/>
+                                    <segue destination="SOt-Yj-Hq6" kind="show" animates="NO" id="DrE-Mz-uGG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -579,6 +582,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7W8-A7-bXM"/>
                     </view>
+                    <connections>
+                        <outlet property="facebookButOutlet" destination="STa-ZH-EKR" id="mKj-te-fmx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1gF-Zz-W1j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -638,11 +644,11 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3n3-FJ-taO">
                                                 <rect key="frame" x="37.5" y="230" width="300" height="50"/>
-                                                <color key="backgroundColor" red="0.0119239362" green="0.47466540340000002" blue="0.98470920319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="mzO-pN-prY"/>
                                                 </constraints>
-                                                <state key="normal" title="Facebook">
+                                                <state key="normal">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
@@ -654,9 +660,6 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvz-MJ-P8s">
                                                 <rect key="frame" x="37.5" y="305" width="300" height="50"/>
                                                 <color key="backgroundColor" red="0.86708122210000005" green="0.85869885099999999" blue="0.15611457819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="ge5-AK-Mun"/>
-                                                </constraints>
                                                 <state key="normal" title="Amazon">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -901,6 +904,7 @@
                                             <constraint firstItem="HWV-Kl-F6v" firstAttribute="width" secondItem="aaq-Ne-Lmg" secondAttribute="width" id="Okg-ZE-Ejz"/>
                                             <constraint firstItem="Nsa-OW-d1l" firstAttribute="top" secondItem="aaq-Ne-Lmg" secondAttribute="bottom" id="PKL-3x-Iw4"/>
                                             <constraint firstItem="ARo-Op-2DJ" firstAttribute="centerX" secondItem="HWV-Kl-F6v" secondAttribute="centerX" id="PUj-Gk-nXN"/>
+                                            <constraint firstItem="dvz-MJ-P8s" firstAttribute="height" secondItem="3n3-FJ-taO" secondAttribute="height" id="QWF-Zl-NhL"/>
                                             <constraint firstItem="aaq-Ne-Lmg" firstAttribute="top" secondItem="EpZ-7Q-qJX" secondAttribute="bottom" constant="56" id="S6d-iG-DzU"/>
                                             <constraint firstItem="lfp-ux-qoO" firstAttribute="centerX" secondItem="dvz-MJ-P8s" secondAttribute="centerX" id="SHA-xA-ekw"/>
                                             <constraint firstItem="ifw-u2-9ru" firstAttribute="width" secondItem="HWV-Kl-F6v" secondAttribute="width" id="UNP-rD-yeq"/>
@@ -1043,8 +1047,7 @@
         <image name="bckb" width="13" height="21"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Unr-nV-B04"/>
         <segue reference="25h-fn-KyH"/>
-        <segue reference="svf-6S-saw"/>
+        <segue reference="DrE-Mz-uGG"/>
     </inferredMetricsTieBreakers>
 </document>

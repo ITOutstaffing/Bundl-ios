@@ -2,28 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    
-    <key>CFBundleURLTypes</key>
-    <array>
-        <dict>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <string>fb2324346994497752</string>
-            </array>
-        </dict>
-    </array>
-    <key>FacebookAppID</key>
-    <string>2324346994497752</string>
-    <key>FacebookDisplayName</key>
-    <string>Bundle_ITO</string>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-        <string>fbapi</string>
-        <string>fb-messenger-share-api</string>
-        <string>fbauth2</string>
-        <string>fbshareextension</string>
-    </array>
-    
+	<key>APIKey</key>
+	<string>eyJhbGciOiJSU0EtU0hBMjU2IiwidmVyIjoiMSJ9.eyJ2ZXIiOiIzIiwiZW5kcG9pbnRzIjp7ImF1dGh6IjoiaHR0cHM6Ly93d3cuYW1hem9uLmNvbS9hcC9vYSIsInRva2VuRXhjaGFuZ2UiOiJodHRwczovL2FwaS5hbWF6b24uY29tL2F1dGgvbzIvdG9rZW4ifSwiY2xpZW50SWQiOiJhbXpuMS5hcHBsaWNhdGlvbi1vYTItY2xpZW50LmI4ZTZhMDk2NzIxNDRjYTVhOWQ1YTJlNjMzZjZhZGQ3IiwiYXBwRmFtaWx5SWQiOiJhbXpuMS5hcHBsaWNhdGlvbi4wMWRlYjRmNzA1NmY0ZmQ2YWY3NzVmNDRiZjM4MGRlOSIsImJ1bmRsZVNlZWRJZCI6ImNvbS5JVE8uYnVuZGxlLkJ1bmRsZSIsImJ1bmRsZUlkIjoiY29tLklUTy5idW5kbGUuQnVuZGxlIiwiaXNzIjoiQW1hem9uIiwidHlwZSI6IkFQSUtleSIsImFwcFZhcmlhbnRJZCI6ImFtem4xLmFwcGxpY2F0aW9uLWNsaWVudC4zMmFlNDNjMWM4MGY0MTU0YmM1OTgyMmNhNDkwY2U1MSIsInRydXN0UG9vbCI6bnVsbCwiYXBwSWQiOiJhbXpuMS5hcHBsaWNhdGlvbi1jbGllbnQuMzJhZTQzYzFjODBmNDE1NGJjNTk4MjJjYTQ5MGNlNTEiLCJpZCI6IjNhMmZjNDZlLWJhYWQtNDhjNC1iZmQ5LWZmMDdmOGZiOTFhYyIsImlhdCI6IjE1NjMzNjQ5NzcyMDMifQ==.GR9BKAUIp6jGFJNmiNdIKbji1X4McJOjz588FdgGZtqwEZNiYHn0vrz797jBC/87PC3BHqdFh1IcZziFobliYEi1GlXAiDggZU5HxyUW75j/gu/c991AqwhbeTUXlQWgDNQEy223JN68i8bBUlLfxwq8ZLCW+z/XvR+P9SDi4WSkJM6LKmRDdBIAuAebcBsO1FwRUORW1uYgHUnQpwZo4IlQZ79ZxeqI0+GiyBmoTCmfcQoX7kjSaNrsHFxobhcktLEXkwIy6xZv7t784usjyaJ3U9eZBNnpY/nTNP5TtWqfx7Vhx3H+rjRXhGMmRnA6H1FikS9+LppA5qAUQiVllA==</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -38,8 +18,32 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.ITO.bundle.Bundle</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>amzn-com.ITO.bundle.Bundle</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>FacebookAppID</key>
+	<string>2324346994497752</string>
+	<key>FacebookDisplayName</key>
+	<string>Bundle_ITO</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

@@ -14,6 +14,9 @@ pod 'Firebase/Storage'
 pod 'FBSDKCoreKit'
 pod 'FBSDKLoginKit'
 pod 'FBSDKShareKit'
+pod 'AWSMobileClient', '~>2.7.0'
+pod 'AWSUserPoolsSignIn', '~>2.7.0'
+pod 'AWSCore'
 
   target 'BundleTests' do
     inherit! :search_paths
