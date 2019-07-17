@@ -1,4 +1,5 @@
 PODS:
+<<<<<<< HEAD
   - AWSAuthCore (2.7.4):
     - AWSCore (= 2.7.4)
   - AWSCognitoIdentityProvider (2.7.4):
@@ -12,6 +13,8 @@ PODS:
   - AWSUserPoolsSignIn (2.7.4):
     - AWSAuthCore (= 2.7.4)
     - AWSCognitoIdentityProvider (= 2.7.4)
+=======
+>>>>>>> 1e00a2f561992520cdd8c570bd7946f72b7b65bf
   - FBSDKCoreKit (5.2.3):
     - FBSDKCoreKit/Basics (= 5.2.3)
     - FBSDKCoreKit/Core (= 5.2.3)
@@ -139,12 +142,15 @@ SPEC REPOS:
     - nanopb
 
 SPEC CHECKSUMS:
+<<<<<<< HEAD
   AWSAuthCore: 877098cabef6e12c6c1876026f58ac5bc3b11cf6
   AWSCognitoIdentityProvider: f9197020de4136ff321a7b74d8123bb1f2535ed2
   AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
   AWSCore: 9ff5ac15c4a5dd8419753fe19b9e98f7ba1b7859
   AWSMobileClient: 142858acff0ed9903254d0ff8ea916353ac69972
   AWSUserPoolsSignIn: fca12f8288cd1b54c23f209037fdf9faa367915f
+=======
+>>>>>>> 1e00a2f561992520cdd8c570bd7946f72b7b65bf
   FBSDKCoreKit: 5154c35d9058fd7dfa0445ba19e194c4b172fc32
   FBSDKLoginKit: dc98b6bf12334f1a42f28d0457fffc9aa3d1eca5
   FBSDKShareKit: 6f9c622f9a5d051f43f2dab6f753d5198422b89c
